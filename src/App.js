@@ -11,7 +11,7 @@ function App() {
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/">
-          <Route index path='Home' element={<Showdata />} />
+          <Route index path='/' element={<Showdata />} />
           <Route path="createprofile" element={<Home/>} />
           <Route path="updateprofile/:id" element={<Update />} />
         </Route>

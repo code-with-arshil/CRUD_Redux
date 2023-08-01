@@ -87,7 +87,7 @@ const Update = () => {
       dispatch(updateProfile({ ...productData, id: parseInt(id) }));
       console.log(productData);
   
-      history("/Home");
+      history("/");
     };
    
     return (
@@ -98,7 +98,7 @@ const Update = () => {
                         <p className="h2 ">--Update Profile--</p>
                     </div>
                     <div className="col text-center">
-                        <Link to='/Home'>
+                        <Link to='/'>
                             <button type="button" className="btn btn-primary">Show Profile</button>
                         </Link>
                     </div>

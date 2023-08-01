@@ -91,7 +91,7 @@ const Home = ({ addProfile }) => {
             nationality: '',
             image: null,
         });
-        history("/Home")
+        history("/")
     };
     return (
         <>
@@ -102,7 +102,7 @@ const Home = ({ addProfile }) => {
                         <p className="h2 ">--Create Profile--</p>
                     </div>
                     <div className="col text-center">
-                        <Link to='/Home'>
+                        <Link to='/'>
                             <button type="button" className="btn btn-dark">Show Profile</button>
                         </Link>
                     </div>
