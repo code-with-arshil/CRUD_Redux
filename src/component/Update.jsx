@@ -8,7 +8,7 @@ const Update = () => {
     const dispatch = useDispatch();
     const data = useSelector((state) => state.profiles.profiles);
     const [productData, setProductData] = useState(data[id]);
-    
+
   console.log(productData)
 
 
