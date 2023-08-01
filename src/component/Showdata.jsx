@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { deleteProfile } from '../redux/Action/Action';
+import LoadingBar from 'react-top-loading-bar'
 const Showdata = () => {
+    const [progress, setProgress] = useState(100)
     const getdata = useSelector((state) => state.profiles.profiles)
     const dispatch = useDispatch()
     return (
         <>
+            <LoadingBar
+                color='#f11946'
+                progress={progress}
+                onLoaderFinished={() => setProgress()}
+            />
             <div className="shadow p-3">
 
                 <div className="row">
