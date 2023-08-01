@@ -1,0 +1,15 @@
+.btnbc{
+    max-width: 500px !important;
+    width: 100%;
+    transition: 0.5s !important;
+}
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  td,th{
+    vertical-align: middle;
+  }
